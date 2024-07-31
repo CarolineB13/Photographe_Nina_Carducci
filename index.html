@@ -8,10 +8,11 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap" rel="stylesheet">
 	<meta charset="UTF-8">
-	<script src="./assets/bootstrap/bootstrap.bundle.min.js"></script>
+	<script src="./assets/bootstrap/bootstrap.bundle.min.js" defer></script>
 	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 	<script src="./assets/maugallery.min.js" defer></script>
 	<script src="./assets/scripts.js" defer></script>
+	<script src="https://kit.fontawesome.com/de13dbdadf.js" crossorigin="anonymous" defer></script>
 	<title>Nina Carducci, photographe professionnelle à Bordeaux</title>
 	<meta name="description" content="Nina Carducci, trouvez votre photographe professionnelle à Bordeaux. Spécialisée dans les portraits, les mariages, les concerts et les entreprises.">
 	<meta name="robots" content="index, follow">
@@ -23,7 +24,7 @@
 
 
 </head>
-<body>
+<body itemscope itemtype="https://schema.org/ProfessionalService">
 <div class="top-header">
 	<h1 class="name">Nina Carducci, photographe professionnelle</h1>
 	<div class="nav">   
@@ -32,7 +33,7 @@
 			<li><a href="#gallery">Galerie</a></li>
 			<li><a href="#services">Service</a></li>
 			<li><a href="#contact">Contact</a></li>
-			<li><a class="social-link" href="https://www.instagram.com/ninacarducci.photo/?hl=fr" target="_blank"><img src="assets/images/instagram.png" alt="Instagram"></a></li>
+			<li><a class="social-link" href="https://www.instagram.com/ninacarducci.photo/?hl=fr" aria-label="Instagram" target="_blank"><img src="assets/images/instagram.png" alt="Instagram"></a></li>
 		</ul>
 	</div>
 </div>
@@ -179,5 +180,19 @@
 		</div>
 	</div>
 </div>
+<footer>
+	<p><i class="fa-solid fa-location-dot"></i> 
+        <span itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+            <span itemprop="streetAddress">68 avenue Alsace-Lorraine</span><br>
+            <span itemprop="postalCode">33200</span> 
+            <span itemprop="addressLocality">Bordeaux</span>
+            <span itemprop="addressCountry">France</span>
+        </span>
+    </p>
+	<p><i class="fa-solid fa-mobile-screen-button"></i> <span itemprop="telephone">05 56 67 78 89</span></p>
+	<p>
+        <time itemprop="openingHours" datetime="Mo-Fr 10:00-19:00">Lundi au Vendredi de 10h à 19h</time>
+    </p>
+</footer>
 </body>
 </html>
