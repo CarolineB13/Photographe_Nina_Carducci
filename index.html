@@ -9,7 +9,7 @@
 	<link href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap" rel="stylesheet">
 	<meta charset="UTF-8">
 	<script src="./assets/bootstrap/bootstrap.bundle.min.js" defer></script>
-	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 	<script src="./assets/maugallery.min.js" defer></script>
 	<script src="./assets/scripts.js" defer></script>
 	<script src="https://kit.fontawesome.com/de13dbdadf.js" crossorigin="anonymous" defer></script>
@@ -43,9 +43,9 @@
 
 </head>
 <body itemscope itemtype="https://schema.org/ProfessionalService">
-<div class="top-header">
+<header class="top-header">
 	<h1 class="name" itemprop="name">Nina Carducci, photographe professionnelle</h1>
-	<div class="nav">   
+	<nav class="nav">   
 		<ul>
 			<li><a href="#about">À propos</a></li>
 			<li><a href="#gallery">Galerie</a></li>
@@ -53,9 +53,9 @@
 			<li><a href="#contact">Contact</a></li>
 			<li><a class="social-link" href="https://www.instagram.com/ninacarducci.photo/?hl=fr" aria-label="Instagram" target="_blank"><img src="assets/images/instagram.png" alt="Instagram"></a></li>
 		</ul>
-	</div>
-</div>
-<div id="header">
+	</nav>
+</header>
+<section id="header">
 
 	<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
 		<div class="carousel-indicators">
@@ -92,8 +92,8 @@
 			<span class="visually-hidden">Next</span>
 		</button>
 	</div>
-</div>
-<div id="about">
+</section>
+<section id="about">
 	<div class="picture left">
 		<picture>
 			<source srcset="./assets/images/nina.webp" type="image/webp">
@@ -106,8 +106,8 @@
 		<p>Nous passons notre vie à chercher le bonheur, et lorsque nous y touchons, nous n’avons qu’une envie : le figer au travers de photographies pour le savourer avec les personnes qui sont importantes à nos yeux, ou le partager au plus grand nombre.
 			C’est ce que je vous propose : saisir ces merveilleux moments au travers de mon regard, mon approche, ma technique. Rendre ces moments immortels, afin que vous puissiez y puiser de l’amour, du bonheur, de la tendresse et de lumière à chaque fois que vous poserez les yeux sur vos photos.</p>
 	</div>
-</div>
-<div id="gallery">
+</section>
+<section id="gallery">
 	<h2 class="title">Portfolio</h2>
 	<div class="container py-3">
 		<div class="gallery" style="display: none">
@@ -130,11 +130,11 @@
 			<figcaption class="quote__author">- Richard Avedon</figcaption>
 		</figure>
 	</div>
-</div>
-<div id="services">
+</section>
+<section id="services">
 	<h2 class="title">Mes services</h2>
 	<div class="container">
-		<div class="service">
+		<article class="service">
 			<div class="service__description">
 				<h3>Shooting photo</h3>
 				<p>Pour capturer vos moments les plus précieux et garder un souvenir impérissable. Je me déplace en Île-de-France pour réaliser vos photos</p>
@@ -144,8 +144,8 @@
 				<span>Matériel, déplacement inclus</span>
 			</div>
 
-		</div>
-		<div class="service">
+		</article>
+		<article class="service">
 			<div class="service__description">
 				<h3>Retouches</h3>
 				<p>Vous souhaitez retoucher vos photos pour un résultat professionnel ? Bénéficier d’un rendu optimal pour vos publications</p>
@@ -154,8 +154,8 @@
 				<h4>50€/photo</h4>
 				<span>2 AR par photo</span>
 			</div>
-		</div>
-		<div class="service">
+		</article>
+		<article class="service">
 			<div class="service__description">
 				<h3>Album photos</h3>
 				<p>Partagez avec vos proches et vos clients les photos des moments partagés ensemble à travers un album photo personnalisé</p>
@@ -164,18 +164,18 @@
 				<h4>400€ album A4</h4>
 				<span>30 pages recto/verso</span>
 			</div>
-		</div>
+		</article>
 	</div>
-</div>
-<div class="quote">
+</section>
+<section class="quote">
 	<figure>
 		<blockquote>
 			<h3 class="quote__text">De manière inconsciente, je crois, je guette un regard, une expression, des traits ou une nostalgie capable de résumer ou plus exactement de révéler une vie</h3>
 		</blockquote>
 		<figcaption class="quote__author">- Richard Avedon</figcaption>
 	</figure>
-</div>
-<div id="contact">
+</section>
+<section id="contact">
 	<div class="container">
 		<div class="form-container">
 			<h2>Une question ? Une demande de devis ?</h2>
@@ -197,7 +197,7 @@
 			</picture>
 		</div>
 	</div>
-</div>
+</section>
 <footer>
 	<p><i class="fa-solid fa-location-dot"></i> 
         <span itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">

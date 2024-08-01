@@ -332,6 +332,12 @@ footer {
 		flex-direction: column;
 		padding-inline: 0;
 	}
+	.top-header .name {
+        margin: auto;
+        overflow-wrap: break-word;
+        text-align: center;
+		font-size: 18px;
+    }
 	.top-header .nav, .top-header .nav ul {
 		width: 100%;
 		padding: 0 0 0 0;
